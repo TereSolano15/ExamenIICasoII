@@ -10,7 +10,7 @@ public class Cliente {
         this.nombre = nombre;
         this.cantDis = cantDis;
         this.mes = mes;
-        this.dispoAnteriores=0;
+        this.dispoAnteriores = 0;
     }
 
     public int getDispoAnteriores() {
@@ -42,7 +42,7 @@ public class Cliente {
     }
 
     public void setCantDis(int cantDis) {
-        this.dispoAnteriores= getCantDis();
+        this.dispoAnteriores = getCantDis();
         this.cantDis = cantDis;
     }
 
