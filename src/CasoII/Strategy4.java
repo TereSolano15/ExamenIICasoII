@@ -1,13 +1,13 @@
 package CasoII;
 
-public class Dis6to49 implements ICobro {
+public class Strategy4 implements ICobro {
 
     @Override
     public float cobro(Cliente c) {
-        return (float) (c.getCantDis() * 0.10);
+        return (float) (c.getCantDis() * 0.05);
     }
 
-    public void total(Cliente cliente) {
+    public void total(Cliente cliente){
         float total = 0;
         float aux = cobro(cliente);
         if (cliente.getCantDis() < cliente.getDispoAnteriores()) {
@@ -27,4 +27,5 @@ public class Dis6to49 implements ICobro {
             System.out.println("No tiene recargos o descuentos aplicados");
         }
     }
+
 }

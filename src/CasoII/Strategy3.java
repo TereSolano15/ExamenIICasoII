@@ -1,13 +1,15 @@
 package CasoII;
 
-public class Dis100 implements ICobro {
+public class Strategy3 implements ICobro {
 
     @Override
     public float cobro(Cliente c) {
-        return (float) (c.getCantDis() * 0.05);
+        return (float) (c.getCantDis() * 0.07);
     }
+    //Aquellos clientes que registren de 50 a 99 dispositivos conectados durante el mes en cobro deben
+    //cancelar $0.07 por dispositivo.
 
-    public void total(Cliente cliente){
+    public void total(Cliente cliente) {
         float total = 0;
         float aux = cobro(cliente);
         if (cliente.getCantDis() < cliente.getDispoAnteriores()) {
@@ -27,5 +29,4 @@ public class Dis100 implements ICobro {
             System.out.println("No tiene recargos o descuentos aplicados");
         }
     }
-
 }
