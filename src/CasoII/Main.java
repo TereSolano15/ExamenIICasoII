@@ -24,13 +24,11 @@ public class Main {
         System.out.println("---------------------------------------------------------------");
         System.out.print("El pago de "+ cliente1.getNombre() + " en "+ cliente1.getMes() + " es ");
         manager.returnTotal(cliente1);
-
-
-
-
-
     }
-  /*
-   EXPLICACION
-     */
+
+      /*                             -----EXPLICACIÓN-----
+        Se utilizó el patrón Strategy debido a que se utilizan métodos similares que cumplen
+        diferentes funciones según la cantidad de dispositivos conectados, para ello se utiliza una
+        clase estrategia para cada cálculo diferente y se hace uso del manager que decide cúal
+        estrategia es la que se adapta mejor a las necesidades. */
 }
