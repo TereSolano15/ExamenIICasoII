@@ -3,27 +3,32 @@ package CasoII;
 public class Main {
     public static void main(String[] args) {
 
-        ICobro strategy1 = new Strategy1();
-        ICobro strategy2 = new Strategy2();
-        ICobro strategy3 = new Strategy3();
-        ICobro strategy4 = new Strategy4();
+        ICobro dis0to5 = new Dis0to5();
+        ICobro dis6to49 = new Dis6to49();
+        ICobro dis50to99 = new Dis50to99();
+        ICobro dis100 = new Dis100();
 
-        Cliente cliente1 = new Cliente("Jazmin",15, "Enero");
-        Cliente cliente2 = new Cliente("Antonio",40, "Octubre");
-        Cliente cliente3= new Cliente("Andres",25,"Junio");
+        Cliente cliente1 = new Cliente("Jazmin",15, "enero");
+        Cliente cliente2 = new Cliente("Antonio",40, "octubre");
+        Cliente cliente3= new Cliente("Andres",25,"junio");
+
+        System.out.println("---------------------------------------------------------------");
+        System.out.print("El cobro de" + cliente1.getCantDis()+" Dispositos "+ cliente1.getNombre() + " en "+ cliente1.getMes() + " es de" );
+        dis6to49.total(cliente1);
+       cliente1.setCantDis(20);
+       cliente1.setMes("Febrero");
+       System.out.println("---------------------------------------------------------------");
+       System.out.print("El pago de "+ cliente1.getNombre() + " en "+ cliente1.getMes() + " es de ");
+        dis6to49.total(cliente1);
+        cliente1.setCantDis(55);
+        cliente1.setMes("Marzo");
+        System.out.println("---------------------------------------------------------------");
+        System.out.print("El pago de "+ cliente1.getNombre() + " en "+ cliente1.getMes() + " es de ");
+        dis50to99.total(cliente1);
 
 
 
-        System.out.println("Andre el mes de enero paga: " +  strategy2.cobro(cliente1) + "$");
-     //   System.out.println("Andrea el mes de febrero paga: "); strategy2.result(cliente1,client1_2);
-       // System.out.println("Andrea el mes de marzo paga: "); strategy3.result(client1_2,client1_2_3);
 
-
-        System.out.println("segunda prueba");
-
-        System.out.println("Pedro el mes de Enero paga: " + strategy1.cobro(cliente2));
-     //   System.out.println("Pedro el mes de Febrero paga: "); strategy2.result(cliente2,client2_3);
-       // System.out.println("Pedro el mes de Marzo paga: "); strategy4.result(client2_3,client2_3_4);
 
     }
   /*

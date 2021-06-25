@@ -1,17 +1,14 @@
 package CasoII;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Cliente {
-    String name;
-    int cantDispositivos;
+    String nombre;
+    int cantDis;
     String mes;
     int dispoAnteriores;
 
-    public Cliente(String name, int cantDispositivos, String mes) {
-        this.name = name;
-        this.cantDispositivos = cantDispositivos;
+    public Cliente(String nombre, int cantDis, String mes) {
+        this.nombre = nombre;
+        this.cantDis = cantDis;
         this.mes = mes;
         this.dispoAnteriores=0;
     }
@@ -32,21 +29,21 @@ public class Cliente {
         this.mes = mes;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public int getCantDispositivos() {
-        return cantDispositivos;
+    public int getCantDis() {
+        return cantDis;
     }
 
-    public void setCantDispositivos(int cantDispositivos) {
-        this.dispoAnteriores= getCantDispositivos();
-        this.cantDispositivos = cantDispositivos;
+    public void setCantDis(int cantDis) {
+        this.dispoAnteriores= getCantDis();
+        this.cantDis = cantDis;
     }
 
 }
