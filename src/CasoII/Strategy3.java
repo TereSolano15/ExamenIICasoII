@@ -6,8 +6,6 @@ public class Strategy3 implements ICobro {
     public float cobro(Cliente c) {
         return (float) (c.getCantDis() * 0.07);
     }
-    //Aquellos clientes que registren de 50 a 99 dispositivos conectados durante el mes en cobro deben
-    //cancelar $0.07 por dispositivo.
 
     public void total(Cliente cliente) {
         float total = 0;
