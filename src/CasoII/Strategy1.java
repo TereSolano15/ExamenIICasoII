@@ -8,6 +8,9 @@ public class Strategy1 implements ICobro {
     }
 
     public void total(Cliente cliente){
-        System.out.println("$0");
+        System.out.println("gratis por tener menos de 5 dispositivos");
+        System.out.println("Cantidad de dispositivos: "+ cliente.getCantDis());
+        System.out.println("\t\t\t\tTotal a pagar: $0");
+
     }
 }

@@ -19,6 +19,7 @@ public class Strategy2 implements ICobro {
         } else if (cliente.getCantDis() > cliente.dispoAnteriores) {
             total = (float) (aux - (aux * 0.25));
             System.out.println(" $" +cobro(cliente));
+            System.out.println("Cantidad de dispositivos: "+ cliente.getCantDis());
             System.out.println("Se ha aplicado un descuento de 25% por aumento de dispositivos");
             System.out.println("\t\t\t\tTotal a pagar: $"+total);
 
